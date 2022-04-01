@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "dev": "webpack serve --config webpack.dev.config.js",
+    "build": "webpack --config webpack.production.config.js"
+  },
   "devDependencies": {
     "@babel/core": "^7.17.8",
     "@babel/preset-env": "^7.16.11",
@@ -6,6 +10,9 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "css-loader": "^6.7.1",
     "file-loader": "^6.2.0",
+    "handlebars": "^4.7.7",
+    "handlebars-loader": "^1.7.1",
+    "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.0",
     "sass": "^1.49.10",
     "sass-loader": "^12.6.0",
@@ -13,6 +20,10 @@
     "terser-webpack-plugin": "^5.3.1",
     "transform-class-properties": "^1.0.0-beta",
     "webpack": "^5.70.0",
-    "webpack-cli": "^4.9.2"
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "dependencies": {
+    "loadash": "^1.0.0"
   }
 }
